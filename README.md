@@ -56,7 +56,7 @@ CREATE DATABASE task_management_system_db;
    
    Update `application.properties` in `backend/src/main/resources/`:
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/task_management
+spring.datasource.url=jdbc:mysql://localhost:3306/task_management_system_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
