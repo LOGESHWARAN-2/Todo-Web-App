@@ -64,7 +64,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 4. **Run Backend**
 ```bash
-cd backend
+cd task-management-system-master
 mvn spring-boot:run
 ```
 Backend runs on: `http://localhost:8080`
