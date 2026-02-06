@@ -1,95 +1,86 @@
-📝 Task Management System
-🚀 Project Overview
+# Task Management System
 
-The Task Management System is a full-stack web application built using React.js, Spring Boot, and MySQL.
-It helps users manage daily tasks by allowing them to create, view, update, and delete tasks through a simple and intuitive interface.
+A simple Task Management System built with React.js and Spring Boot. Users can login and perform CRUD operations on their tasks.
 
-✨ Features
+## 📋 Overview
 
-Create new tasks
+This is a full-stack web application where users can login and manage their tasks with basic Create, Read, Update, and Delete operations.
 
-View all tasks
+## ✨ Features
 
-Update existing tasks
+- User Login
+- Create tasks
+- View all tasks
+- Update tasks
+- Delete tasks
 
-Delete tasks
+## 🛠 Tech Stack
 
-RESTful API integration
+**Frontend**
+- React.js
+- HTML
+- CSS
+- JavaScript
 
-User-friendly interface
+**Backend**
+- Spring Boot
+- Java
+- REST API
 
-🧱 Tech Stack
-Layer	Technology
-Frontend	React.js
-Backend	Spring Boot
-Language	Java
-Database	MySQL
-API Type	REST (JSON)
-Build Tool	Maven
-Package Manager	npm
-📂 Project Structure
-task-management-system/
-│
-├── frontend/        # React Application
-└── backend/         # Spring Boot Application
+**Database**
+- MySQL
 
-⚙️ Setup Instructions
-🔹 1. Clone Repository
-git clone https://github.com/your-username/task-management-system.git
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+- Java JDK 8+
+- MySQL
+- Maven
+
+### Installation Steps
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/task-management-system.git
 cd task-management-system
+```
 
-🔹 2. Configure MySQL Database
-CREATE DATABASE taskdb;
+2. **Setup MySQL Database**
+```sql
+CREATE DATABASE task_management_system_db;
+```
 
-🔹 3. Backend Configuration (application.properties)
-spring.datasource.url=jdbc:mysql://localhost:3306/taskdb
-spring.datasource.username=root
+3. **Configure Backend**
+   
+   Update `application.properties` in `backend/src/main/resources/`:
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/task_management
+spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+```
 
-🔹 4. Run Backend
+4. **Run Backend**
+```bash
 cd backend
 mvn spring-boot:run
+```
+Backend runs on: `http://localhost:8080`
 
-
-Backend runs on:
-
-http://localhost:8080
-
-🔹 5. Run Frontend
+5. **Run Frontend**
+```bash
 cd frontend
 npm install
 npm start
+```
+Frontend runs on: `http://localhost:3000`
 
 
-Frontend runs on:
+6. **Snapshots**
+   <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/34864c2d-b9f4-4fa6-a328-4d8a3dea03f9" />
 
-http://localhost:3000
+   <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c7571ad6-9ceb-46a1-a056-960435f5bf4b" />
 
-📬 API Endpoints
 
-GET /api/tasks → Get all tasks
-
-POST /api/tasks → Create task
-
-PUT /api/tasks/{id} → Update task
-
-DELETE /api/tasks/{id} → Delete task
-
-🔁 Application Flow
-User → React UI → Spring Boot API → MySQL Database
-        ↑                              ↓
-        └──────── Response Data ───────┘
-
-🔮 Future Enhancements
-
-User authentication
-
-Task priorities
-
-Due dates
-
-Search and filter
-
-Notifications
